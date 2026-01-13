@@ -1,116 +1,81 @@
-# Mental Wellness ChatBot
+# 🌿 Mental Wellness AI Companion
 
-A supportive mental health chatbot built with React, Node.js, and OpenAI's GPT-3.5 Turbo. This application provides a safe space for users to discuss their mental health concerns and receive empathetic responses.
+[![GitHub License](https://img.shields.io/github/license/parths19/Mental_Wellness_ChatBot?style=flat-square&color=6366f1)](LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=flat-square&logo=nextdotjs)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![AI Integration](https://img.shields.io/badge/AI-Gemini/OpenAI-orange?style=flat-square)](https://ai.google.dev/)
 
-## Features
+This **Bot** is a compassionate, AI-driven chatbot designed to provide 24/7 mental health support, emotional guidance, and a safe space for users to express their thoughts without judgment. Built with a focus on privacy and user experience.
 
-- 🤖 AI-powered empathetic responses using GPT-3.5 Turbo
-- 🔒 Secure user authentication
-- 💬 Real-time chat functionality
-- 🚨 Crisis detection and support resources
-- 📊 Sentiment analysis of conversations
-- 🌓 Dark/Light mode support
-- 📱 Responsive design
+🔗 **Repository:** [github.com/parths19/Mental_Wellness_ChatBot](https://github.com/parths19/Mental_Wellness_ChatBot)
 
-## Tech Stack
+---
 
-### Frontend
-- React
-- TypeScript
-- Redux Toolkit
-- Chakra UI
-- Socket.IO Client
+## ✨ Key Features
 
-### Backend
-- Node.js
-- Express
-- TypeScript
-- MongoDB
-- Socket.IO
-- OpenAI API
-- JWT Authentication
+- **🧠 Empathetic AI Conversations:** Utilizes advanced LLMs to provide context-aware, compassionate responses to emotional queries.
+- **🛡️ Privacy First:** Secure data handling to ensure users feel safe sharing their feelings.
+- **⚡ Real-time Support:** Instant responses to help ground users during moments of high stress or anxiety.
+- **🎨 Calming UI/UX:** A minimalist, "Zen" inspired interface designed to reduce cognitive load and visual stress.
+- **📊 Mood Tracking:** (Optional Feature) Visualizes emotional trends over time to help users understand their triggers.
 
-## Prerequisites
+---
 
-Before you begin, ensure you have the following installed:
-- Node.js (v14 or higher)
-- MongoDB
-- npm or yarn
+## 🛠️ Tech Stack
 
-You'll also need:
-- OpenAI API key
-- MongoDB connection string
+| Category | Tools |
+| :--- | :--- |
+| **Frontend** | Next.js 15, React 19, Tailwind CSS |
+| **Backend** | Node.js / Next.js API Routes |
+| **AI/ML** | Google Gemini API / OpenAI API |
+| **Animations** | Framer Motion |
+| **Deployment** | Vercel |
 
-## Installation
+---
 
-1. Clone the repository:
-\`\`\`bash
-git clone <repository-url>
-cd mental-wellness-chatbot
-\`\`\`
+## 🚀 Technical Challenges Overcome
 
-2. Install dependencies for both frontend and backend:
-\`\`\`bash
-# Install frontend dependencies
-npm install
+### 1. Contextual Memory
+Implemented a chat history buffer that allows the AI to remember earlier parts of the conversation, creating a more natural and supportive dialogue flow.
 
-# Install backend dependencies
-cd backend
-npm install
-\`\`\`
+### 2. Safety Filtering
+Developed system prompts to ensure the AI identifies crisis-related keywords and provides resources/helplines when immediate professional help is needed.
 
-3. Create environment files:
+### 3. Responsive Web Design
+Optimized the chat interface for "Mobile First" usage, ensuring support is accessible on-the-go.
 
-Create a \`.env\` file in the backend directory with the following variables:
-\`\`\`
-PORT=5001
-MONGODB_URI=mongodb://localhost:27017/mental-wellness
-CLIENT_URL=http://localhost:5174
-OPENAI_API_KEY=your-openai-api-key
-JWT_SECRET=your-jwt-secret
-\`\`\`
+---
 
-## Running the Application
+## 📦 Installation & Setup
 
-1. Start the backend server:
-\`\`\`bash
-cd backend
-npm run dev
-\`\`\`
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/parths19/Mental_Wellness_ChatBot.git](https://github.com/parths19/Mental_Wellness_ChatBot.git)
+   ```
 
-2. In a new terminal, start the frontend development server:
-\`\`\`bash
-# From the project root
-npm run dev
-\`\`\`
+2. **Install dependencies:**
 
-The application will be available at:
-- Frontend: http://localhost:5174
-- Backend API: http://localhost:5001
+    ```bash
+    npm install
+    # or
+    bun install
+    ```
 
-## Features in Detail
+3. **Set up Environment Variables: Create a .env.local file in the root directory:**
 
-### Chat Functionality
-- Real-time messaging using Socket.IO
-- AI-powered responses using GPT-3.5 Turbo
-- Sentiment analysis of user messages
-- Crisis detection and support resources
+    ```bash
+    AI_API_KEY=your_api_key_here
+    ```
 
-### Authentication
-- Secure user registration and login
-- JWT-based authentication
-- Protected routes
+4. **Run the development server:**
+    ```bash
+    npm run dev 
+    ```
 
-### User Interface
-- Clean, intuitive design
-- Dark/Light mode toggle
-- Responsive layout for all devices
-- Real-time typing indicators
 
-## Contributing
+## ⚠️ Disclaimer
+ZenBot is an AI companion designed for emotional support and wellness guidance. It is not a replacement for professional therapy, medical advice, or crisis intervention. If you are in immediate danger, please contact your local emergency services or a mental health professional.
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
+---
+---
+Developed with ❤️ by Parth Shrivastava.
